@@ -6,13 +6,51 @@
 
 body {
     font-family: RazerF5, sans-serif;
-    height: 100vh;
-    background-color: #222222;
 }
 
 body a {
     text-decoration: none;
     color: #000;
+}
+
+.aaa,
+.aaa2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 6vw;
+    height: 3vh;
+    background-color: rgb(71, 228, 9);
+    border-radius: 1vw;
+}
+
+.aaa2 {
+    position: relative;
+    bottom: 0;
+}
+
+.paragraf, .paragrafx{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+    height: max-content;
+    padding: 2vw;
+    padding-right: 23vw;
+    padding-left: 23vw;
+}
+
+.paragrafx{
+    display: flex;
+    flex-direction: column;
+    padding-right: 18vw;
+    padding-left: 18vw;
+    gap: 3vw;
 }
 
 .header_up {
@@ -28,9 +66,22 @@ body a {
     padding-right: 15vw;
 }
 
-.cfr{
+h1 {
+    text-align: center;
+}
+
+.rashifrovka1 .ddd{
+    font-weight: 700;
+}
+
+.eee {
+    gap: 0.3vw;
+}
+
+.cfr {
     background-color: white;
 }
+
 .number {
     display: flex;
     flex-direction: row;
@@ -38,6 +89,15 @@ body a {
     gap: 4%;
     width: 50%;
     flex-wrap: wrap;
+}
+
+.section1 {
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    align-items: center;
 }
 
 .phone_numb {
@@ -48,6 +108,10 @@ body a {
 }
 
 .phone_numb:hover {
+    color: rgb(0, 185, 0);
+}
+
+.lishki2:hover {
     color: rgb(0, 185, 0);
 }
 
@@ -74,24 +138,14 @@ body a {
     transition: color 0.3s ease;
 }
 
-/* .registration:hover {
-    color: 
-} */
-
 .header_center {
     display: flex;
     background-color: white;
-    border-top:  1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
     height: 5.7vh;
     align-items: center;
     justify-content: center;
     border-bottom: 0.15vw solid rgb(0, 185, 0);
-}
-
-.zagolovok1 {
-    display: flex;
-    text-align: center;
-    width: 15vw;
 }
 
 .zagl {
@@ -118,39 +172,39 @@ body a {
     list-style: none;
 
 }
+
 .menuup0 {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    align-items: center;
+    gap: 2vw;
     list-style: none;
 }
+
 .lishki2 {
-    color: white;
-    font-size: 4vw;
+    color: black;
+    font-size: 1vw;
     transition: all 0.3s ease;
 }
+
 .lishki {
     color: black;
     font-size: 0.85vw;
     transition: all 0.3s ease;
 }
 
+.fre{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 3vw;
+}
 .lishki:hover {
     transform: scale(1.05);
     color: rgb(0, 202, 0);
 }
 
-.search_heart_shop-bag {
-    display: flex;
-    justify-content: end;
-    width: 15vw;
-    gap: 0.4vw;
-}
-
-.poisk {
-    width: 1.2vw;
-    height: 1.2vw;
-}
 
 .svg_b_menu {
     display: none;
@@ -162,247 +216,11 @@ body a {
     display: none;
 }
 
-main {
+.main {
     display: flex;
     bottom: 0;
     flex-direction: column;
     align-items: center;
-    background-color: #222222;
-}
-
-.section1 {
-    display: flex;
-    background-image: url(Aether-Monitor-Light-Bar-HP-3840x1400.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 68vh;
-    width: 100%;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-    padding-top: 5%;
-    gap: 1.6vw;
-    margin-bottom: 0.7vw;
-}
- .section_1_tovar /*карточка товара*/{ 
-    display: flex;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 68vh;
-    width: 100%;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-    padding-top: 5%;
-    gap: 1.6vw;
-    margin-bottom: 0.7vw;
-}
-
-.excl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ff9c08;
-    width: 8vw;
-    height: 1.7vw;
-    color: #000;
-}
-
-.excl_sl {
-    font-size: 0.65vw;
-}
-
-.new {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2aaadb;
-    width: 5.5vw;
-    height: 1.6vw;
-    color: #000;
-}
-
-.new_sl {
-    font-size: 0.65vw;
-}
-
-.button_obsh {
-    display: flex;
-    justify-content: center;
-}
-
-.button_for {
-    font-size: 1.1vw;
-}
-
-.zagolovok_section {
-    font-size: 2.7vw;
-    color: white;
-    text-align: center;
-}
-
-.podzagolovok_section {
-    font-size: 1.4vw;
-    font-weight: 100;
-}
-
-.button_uzn {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-color: transparent;
-    border: 3px solid transparent;
-    color: white;
-}
-
-.button_by {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-color: transparent;
-    border: 3px solid transparent;
-    color: white;
-}
-.ugl_strel {
-    width: 1.5vw;
-    height: 1.5vw;
-}
-
-.section2 {
-    display: flex;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-}
-
-.partX {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    overflow: hidden;
-    height: 68vh;
-    width: 100vw;
-    color: white;
-    padding: 5%;
-    gap: 1.6vw;
-    margin-bottom: 0.7vw;
-    background-position: center;
-}
-
-.part1 {
-    display: flex;
-    background-image: url(Viper-V3-Pro-HP-3840x1400.webp);
-    background-repeat: no-repeat;
-}
-
-.part2 {
-    display: flex;
-    background-image: url(Kraken-V4-Pro-HP-1920x700-v2.webp);
-    background-repeat: no-repeat;
-}
-
-.part3 {
-    display: flex;
-    background-image: url(Viper-V3-Pro-HP-1920x700-v3.webp);
-    background-repeat: no-repeat;
-}
-
-.part4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.card {
-    display: flex;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    height: 27vw;
-    width: 50vw;
-    padding-top: 5%;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8vw;
-}
-
-.zagolovok_section_c {
-    font-size: 2.1vw;
-    text-align: center;
-}
-
-.podzagolovok_section_c {
-    font-size: 1vw;
-    font-weight: 100;
-    text-align: center;
-}
-
-.card_para {
-    display: flex;
-    flex-direction: row;
-    gap: 0.8vw;
-    margin-bottom: 0.8vw;
-}
-
-.card1 {
-    background-image: url(Aether-Smart-Lamp-Pro-HP-Small-home-desktop.webp);
-}
-
-.card2 {
-    background-image: url(razer-ces-2025-b-950x580-desktop.webp);
-}
-
-.card3 {
-    background-image: url(main-mini-banner-for-razer-basilisk-v3-35k-desktop.jpg);
-}
-
-.card4 {
-    background-image: url(main-mini-banner-for-BlackWidow-V4-Pro-desktop.webp);
-}
-
-.card5 {
-    background-image: url(main-mini-banner-for-Huntsman-V3-Pro-desktop.webp);
-}
-
-.card6 {
-    background-image: url(DeathAdder-V3-Pro-HP-Small-home-desktop-v4.webp);
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    height: 40vh;
-    background-color: #1f1f1f;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.footer_1 {
-    display: flex;
-    align-items: start;
-    height: 80%;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 3%;
-}
-
-.footer_part {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-}
-
-.footer_part1 {
-    display: flex;
-    flex-direction: column;
 }
 
 .number_work {
@@ -417,58 +235,78 @@ footer {
     color: white;
 }
 
+.ttt{
+    width: 100%;
+    height: 0.1vw;
+    background-color: rgb(0, 202, 0);
+}
 .posle_phone_footer {
     font-size: 0.8vw;
     color: #6a6a6a;
 }
 
-.c123{
-    color: #000;
+.c123 {
+    color: black;
 }
 
-.gl_menu_foot {
-    font-size: 1vw;
-    color: white;
-}
-
-.menu_foot {
-    font-size: 0.8vw;
-    color: #6a6a6a;
-}
-
-.footer_2 {
+.sss {
     display: flex;
-    height: 20%;
-    flex-direction: column;
-    align-items: center;
-    color: #50524e;
-    font-size: 1vw;
+    flex-direction: row;
 }
 
-.prava {
-    color: rgb(0, 202, 0);
+.eee {
+    display: flex;
+    list-style-type: none;
 }
-
 
 @media (max-width:1000px) {
-    .header_up, .header_center {
+
+    .header_up,
+    .header_center {
         padding-left: 8vw;
         padding-right: 8vw;
     }
-    .zagl{
+
+    .zagl {
         font-size: 1.5vw;
     }
-    .search_heart_shop-bag{
-        width: 5vw;
-    }
-    .zagolovok1{
+
+    .zagolovok1 {
         width: 25vw;
         left: 0;
     }
 }
+
 @media (max-width:450px) {
+    .paragraf {
+        padding: 3vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+
+    }
+
+    .paragrafx{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    h2 {
+        text-align: center;
+    }
+
     .header_up {
         display: none;
+    }
+
+    .aaa {
+        width: 17vw;
+        height: 4vh;
+        border-radius: 2vw;
+    }
+
+    .lishki2 {
+        font-size: 4vw;
+        transition: all 0.3s ease;
     }
 
     .header_center {
@@ -478,7 +316,8 @@ footer {
         padding-top: 1vw;
         padding-bottom: 1vw;
     }
-    .ccc{
+
+    .ccc {
         flex-direction: row;
     }
 
@@ -517,94 +356,8 @@ footer {
         width: 30vw;
     }
 
-    .poisk {
-        width: 5vw;
-        height: 5vw;
-    }
-
-    .zagolovok_section {
-        font-size: 7vw;
-    }
-
     .zagl {
         font-size: 3.4vw;
-    }
-
-    .podzagolovok_section {
-        font-size: 4vw;
-        text-align: center;
-    }
-
-    .section1 {
-        gap: 5vw;
-        width: 90vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        background-image: url(phone\ version\ 1\ photo.webp);
-    }
-
-    .section_1_tovar {
-        gap: 5vw;
-        width: 90vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        background-image: url();
-    }
-
-    .card_para {
-        flex-direction: column;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-size: cover;
-        overflow: hidden;
-        height: 80vh;
-        width: 100vw;
-        color: white;
-        padding: 5%;
-        margin-bottom: 0.7vw;
-        background-position: center;
-        gap: 5vw;
-        width: 90vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    .partX {
-        gap: 5vw;
-        width: 90vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    .excl {
-        width: 27vw;
-        height: 5.5vw;
-    }
-
-    .excl_sl {
-        font-size: 2.5vw;
-    }
-
-    .button_for {
-        font-size: 3.5vw;
-    }
-
-    .ugl_strel {
-        width: 4vw;
-        height: 4vw;
-    }
-
-    .zagolovok_section_c {
-        font-size: 7vw;
-    }
-
-    .podzagolovok_section_c {
-        font-size: 4vw;
-        text-align: center;
     }
 
     .menuup1 {
@@ -621,53 +374,14 @@ footer {
     }
 }
 
-@media (max-width:450px) {
-    .section1 {
-        background-image: url(phone\ version\ 1\ photo.webp);
-    }
-
-    .part1 {
-        background-image: url(phone\ version\ 2\ photo.webp);
-    }
-
-    .part2 {
-        background-image: url(phone\ version\ 3\ photo.webp);
-    }
-
-    .part3 {
-        background-image: url(phone\ version\ 4\ photo.webp);
-    }
-
-    .card1 {
-        background-image: url(phone\ version\ 5\ photo.webp);
-    }
-
-    .card2 {
-        background-image: url(phone\ version\ 6\ photo.webp);
-    }
-
-    .card3 {
-        background-image: url(phone\ version\ 7\ photo.jpg);
-    }
-
-    .card4 {
-        background-image: url(phone\ version\ 8\ photo.webp);
-    }
-
-    .card5 {
-        background-image: url(phone\ version\ 9\ photo.webp);
-    }
-
-    .card6 {
-        background-image: url(phone\ version\ 10\ photo.webp);
-    }
-}
-
-
-
 @media (max-width:800px) {
     .header_up {
         display: none;
+    }
+
+    .lishki2 {
+        font-size: 4vw;
+        transition: all 0.3s ease;
     }
 
     .header_center {
@@ -703,17 +417,6 @@ footer {
         padding-left: 1vw;
         width: 10%;
         height: 100%;
-    }
-
-    .search_heart_shop-bag {
-        display: flex;
-        justify-content: end;
-        gap: 5vw;
-    }
-
-    .poisk {
-        width: 5vw;
-        height: 5vw;
     }
 
     .lishki_1 {
